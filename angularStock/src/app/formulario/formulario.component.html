@@ -1,0 +1,30 @@
+
+
+<header>
+   <h1>Ingresar detalles <span> <br> artículo</span></h1> 
+ </header>
+<form action=""  [formGroup]="addForm" (submit)="addNewProduct()" 
+      class="shared-styles">
+  
+  <label for="product-title">Nombre</label>
+  <input type="text" formControlName="title">
+  
+  <label for="product-price">Precio</label>
+  <input type="number" formControlName="price" >
+ 
+  <label for="product-description">Descripcion</label>
+  <textarea formControlName="description"></textarea>
+
+  
+
+  <label for="product-images">img URL</label>
+  <input type="text" formControlName="images">
+  
+ 
+  <button class="" type="submit"  >Añadir</button>
+</form>
+
+<div *ngIf="formSubmitted && !addForm.valid" class="error-message">
+  Por favor, complete el formulario correctamente.
+</div>
+<a type="button" routerLink="" >volver</a>

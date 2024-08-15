@@ -1,0 +1,42 @@
+/* Estilos globales */
+img{width: 350px;}
+
+:root{color-scheme: ligth dark ;}
+
+h1{text-align: center; }
+
+a{position: absolute;
+    right: 5%;
+    top: 10px;
+}
+
+form{text-align: center;
+    padding: 10px;
+ }
+
+ .shared-styles {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.results {
+    grid-template-columns: repeat(auto-fill, 
+    minmax(400px, 400px));
+     }
+
+     button{ margin-top: 10px;
+    width: fit-content;
+    margin: 0 auto;}
+
+label,input{margin: 3px;}
+@media screen and (max-width: 700px) {
+    h1 {
+      font-size: 1.5em; 
+    }
+    a{font-size: smaller}
+  }
+  .error-message{text-align: center;
+                 color: red;     }

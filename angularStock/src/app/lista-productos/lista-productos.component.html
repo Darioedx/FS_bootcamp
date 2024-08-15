@@ -1,0 +1,13 @@
+
+<header>
+      <h1>Artículos</h1> 
+</header>
+
+<a type="button" routerLink="formulario" >Añadir artículos</a>
+
+<section class="results shared-styles">
+    <app-productos  *ngFor="let products of listaProductos" 
+      [products]="products" >
+    </app-productos>
+</section>
+
