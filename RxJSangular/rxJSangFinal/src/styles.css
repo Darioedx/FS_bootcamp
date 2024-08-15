@@ -1,0 +1,122 @@
+/* You can add global styles to this file, and also import other style files */
+:root{color-scheme: ligth dark;}
+
+body {
+  background: black;
+   padding: 50px;
+   padding-top: 25px;
+  
+  }
+
+.container {
+    display: flex;
+    text-align: center;
+  }
+.barra-pendientes {
+    flex: 1;
+    background:#5d0202;
+  }
+
+.barra-realizadas {
+    flex: 1;
+    background:  rgb(0, 23, 0);
+  }
+
+  ul {
+    list-style-type: none;
+      
+  }
+  
+.tareas-pendientes {
+  flex: 1;
+  background:#5d0202;
+  height: 750px; 
+  }
+  
+ 
+.tareas-realizadas {
+  flex: 1;
+  background: rgb(0, 23, 0);
+  height: 750px;
+  }
+
+form{text-align: center;
+         padding: 10px;}
+ 
+
+ 
+.item {
+    
+  display: grid; 
+  grid-template-columns: auto min-content; 
+}
+  
+span{
+    grid-column: 1; 
+    align-self: center; 
+    max-width: 300px;
+    word-wrap: break-word;
+     margin: 0 auto;
+    }
+
+.boton{grid-column: 2; 
+    align-self: center; 
+    margin-right: 20px;}
+  
+input{
+    background:none;
+    border:1px solid white;
+    margin: 5px;
+    padding: 5px;
+    }
+ 
+button{background:none;
+  margin: 5px;
+  border:1px solid white;
+}
+
+input:focus {
+    outline: none; 
+   
+  }
+  @media (max-width: 1250px) {
+    body {
+      font-size: smaller;
+      }
+    .tareas-pendientes, .tareas-realizadas{ width: 200px;} 
+    button{
+      font-size: 7px;
+    } 
+  }
+  
+  @media (max-width: 950px) {
+  
+  
+    .tareas-pendientes, .tareas-realizadas{ width: 100px;} 
+   span{max-width: 200px;
+ }  
+}
+ 
+  @media (max-width: 800px) {
+    
+   span{max-width: 100px;}
+   .item {
+    grid-template-columns: 1fr;  
+  }
+
+  .boton {
+    grid-column: auto; 
+    margin-right: 0; 
+  }
+
+  ul{margin-right: 20%;}
+
+  }
+
+  
+
+  .verde{
+ max-width: 300px;
+   word-wrap: break-word;
+    margin: 0 auto;
+  padding: 5px;}
